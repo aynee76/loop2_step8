@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto;
+}
+
+main {
+    background-color: white;
+}
+
+.part-1 {
+    width: 300px;
+    height: 500px;
+    border: 10px solid black;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 30rem;
+    position: relative;
+}
+
+.part-2 {
+    width: 280px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    clip-path: polygon(0 0, 100% 0%, 100% 62%, 0 23%);
+    background-color: #5288f4;
+    border-top-left-radius: 1.3rem;
+    border-top-right-radius: 1.3rem;
+}
+
+.head {
+    align-self: center;
+    text-transform: uppercase;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.card {
+    width: 250px;
+    height: 150px;
+    align-self: center;
+    position: absolute;
+    top: 4.5rem;
+    left: 15px;
+}
+
+.top {
+    height: 20px;
+    width: 180px;
+    background-color: black;
+    display: flex;
+    margin-bottom: 1rem;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: -8px;
+    /* align-self: center; */
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.tag {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.image {
+    width: 20px;
+    height: 20px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.heading {
+    font-weight: 800;
+    font-size: 12px;
+}
+
+.description {
+    font-size: 10px;
+    color: rgb(180, 179, 178);
+    font-weight: 600;
+}
+
+.last {
+    margin-bottom: 3rem;
+}
+
+.switch{
+    position: relative;
+    display:inline-block ;
+    width: 50px;
+    height:25px;
+  }
+
+  .switch input{
+  display:none
+  }
+
+  .slider{
+    position: absolute;
+    background-color: #ccc;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    border-radius:50px;
+  }
+  .slider:before{
+    position: absolute;
+    content:"";
+      background-color: white;
+    width: 20px;
+    height:20px;
+    left: 4px;
+    top:2px;
+    border-radius:50%;
+  }
+
+  input:checked + .slider{
+    background-color: #5288f3;
+  }
+  input:checked + .slider:before{
+    transform: translateX(26px); 
+  
+  }
